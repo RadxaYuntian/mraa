@@ -46,6 +46,7 @@ ARM
 * [96Boards](../master/docs/96boards.md)
 * [ADLINK IPi-SMARC ARM](../master/docs/adlink_ipi_arm.md)
 * [Rock Pi 4](../master/docs/rockpi4.md)
+* [Radxa Zero 2](../master/docs/radxa-zero2.md)
 
 MIPS
 ---

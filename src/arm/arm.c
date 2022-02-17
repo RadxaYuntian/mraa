@@ -17,6 +17,7 @@
 #include "arm/phyboard.h"
 #include "arm/raspberry_pi.h"
 #include "arm/adlink_ipi.h"
+#include "arm/radxa_zero2.h"
 #include "mraa_internal.h"
 
 
@@ -98,6 +99,8 @@ mraa_arm_platform()
             platform_type = MRAA_RASPBERRY_PI;
         else if (mraa_file_contains("/proc/device-tree/model", "ADLINK ARM, LEC-PX30"))
             platform_type = MRAA_ADLINK_IPI;
+        else if (mraa_file_contains("/proc/device-tree/model", "Radxa Zero2"))
+            platform_type = MRAA_RADXA_ZERO2;
     }
 
     switch (platform_type) {
@@ -124,6 +127,9 @@ mraa_arm_platform()
             break;
         case MRAA_ADLINK_IPI:
             plat = mraa_adlink_ipi();
+            break;
+        case MRAA_RADXA_ZERO2:
+            plat = mraa_radxa_zero2();
             break;
         default:
             plat = NULL;
