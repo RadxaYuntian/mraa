@@ -179,7 +179,7 @@ typedef enum {
  *  ROCKPI4 GPIO numbering enum
  */
 typedef enum {
-    MRAA_ROCKPI4_PIN2 = 3,
+    MRAA_ROCKPI4_PIN3 = 3,
     MRAA_ROCKPI4_PIN5 = 5,
     MRAA_ROCKPI4_PIN7 = 7,
     MRAA_ROCKPI4_PIN8 = 8,
