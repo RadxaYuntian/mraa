@@ -39,6 +39,7 @@ X86
 
 ARM
 ---
+* [Radxa ROCK 5A]()
 * [Raspberry Pi](../master/docs/raspberry_pi.md)
 * [Banana Pi](../master/docs/banana_pi.md)
 * [Beaglebone Black](../master/docs/beaglebone.md)
