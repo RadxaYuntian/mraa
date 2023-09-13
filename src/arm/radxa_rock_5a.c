@@ -70,6 +70,7 @@ mraa_radxa_rock_5a()
     b->uart_dev[3].device_path = (char*) radxa_rock_5a_serialdev[3];
     b->uart_dev[4].device_path = (char*) radxa_rock_5a_serialdev[4];
 
+    // I2C
     b->i2c_bus_count = MRAA_RADXA_ROCK_5A_I2C_COUNT;
     b->def_i2c_bus = 0;
     b->i2c_bus[0].bus_id = 1;
@@ -84,6 +85,7 @@ mraa_radxa_rock_5a()
     b->spi_bus[0].bus_id = 0;
     b->spi_bus[1].bus_id = 4;
 
+    // PWM
     b->pwm_dev_count = MRAA_RADXA_ROCK_5A_PWM_COUNT;
     b->pwm_default_period = 500;
     b->pwm_max_period = 2147483;
@@ -124,12 +126,14 @@ mraa_radxa_rock_5a()
     b->pins[28].pwm.mux_total = 0;
     b->pins[28].pwm.pinmap = 0;
 
+    // AIO
     b->aio_count = MRAA_RADXA_ROCK_5A_AIO_COUNT;
     b->adc_raw = 10;
     b->adc_supported = 10;
     b->aio_dev[0].pin = 37;
     b->aio_non_seq = 1;
     b->chardev_capable = 1;
+
     // Hardware X1.2
     mraa_radxa_rock_5a_pininfo(b, 0,  -1, -1, (mraa_pincapabilities_t){0,0,0,0,0,0,0,0}, "INVALID");
     mraa_radxa_rock_5a_pininfo(b, 1,  -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,0,0}, "3V3");
