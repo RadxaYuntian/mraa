@@ -48,7 +48,6 @@ ARM
 * [Radxa ROCK 5A](../mraa//docs/radxa_rock_5a.md)
 * [Rock Pi 4](../master/docs/rockpi4.md)
 
-
 MIPS
 ---
 * [Linkit Smart 7688](../master/docs/linkit_7688.md)
