@@ -146,9 +146,9 @@ mraa_radxa_rock_5a()
     mraa_radxa_rock_5a_pininfo(b, 8,   0, 13, (mraa_pincapabilities_t){1,0,0,0,0,1,0,1}, "GPIO0_B5");  // Used by fiq_debugger
     mraa_radxa_rock_5a_pininfo(b, 9,  -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,0,0}, "GND");
     mraa_radxa_rock_5a_pininfo(b, 10,  0, 14, (mraa_pincapabilities_t){1,0,0,0,0,1,0,1}, "GPIO0_B6");  // Used by fiq_debugger
-    mraa_radxa_rock_5a_pininfo(b, 11,  4, 11, (mraa_pincapabilities_t){1,1,1,0,0,0,0,0}, "GPIO4_B3");  // i2c7-m3, i2c channel was occupied by i2c7-m0
+    mraa_radxa_rock_5a_pininfo(b, 11,  4, 11, (mraa_pincapabilities_t){1,1,1,0,0,0,0,0}, "GPIO4_B3");  // I2C-M0 is used by on-board devices
     mraa_radxa_rock_5a_pininfo(b, 12,  4,  1, (mraa_pincapabilities_t){1,1,0,0,1,0,0,0}, "GPIO4_A1");
-    mraa_radxa_rock_5a_pininfo(b, 13,  4, 10, (mraa_pincapabilities_t){1,1,1,0,1,0,0,0}, "GPIO4_B2");  // i2c7-m3, i2c channel was occupied by i2c7-m0
+    mraa_radxa_rock_5a_pininfo(b, 13,  4, 10, (mraa_pincapabilities_t){1,1,1,0,1,0,0,0}, "GPIO4_B2");  // I2C-M0 is used by on-board devices
     mraa_radxa_rock_5a_pininfo(b, 14, -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,0,0}, "GND");
     mraa_radxa_rock_5a_pininfo(b, 15,  4, 12, (mraa_pincapabilities_t){1,1,1,0,0,0,0,1}, "GPIO4_B4");
     mraa_radxa_rock_5a_pininfo(b, 16,  1,  5, (mraa_pincapabilities_t){1,1,0,0,1,0,0,0}, "GPIO1_A5");

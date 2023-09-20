@@ -201,7 +201,7 @@ typedef enum {
     RADXA_ROCK_5A_PIN37 = 37,
     RADXA_ROCK_5A_PIN38 = 38,
     RADXA_ROCK_5A_PIN40 = 40
-} RadxaRock5aWiring;
+} RadxaRock5AWiring;
 
 /**
  *  Radxa ROCK 3 Model C GPIO numbering enum
