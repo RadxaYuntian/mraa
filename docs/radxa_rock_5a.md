@@ -1,5 +1,5 @@
-Radxa ROCK 5A Single Board Computer    {#_rRadxa}
-=============================
+Radxa ROCK 5 Model A {#_Radxa}
+====================
 
 Radxa ROCK 5A is a Rockchip RK3588s based SBC(Single Board Computer) by Radxa. It can run android or some Linux distributions. Radxa ROCK 5A features a eight core ARM processor, 64bit dual channel 3200Mb/s LPDDR4, up to 8Kp60 HDMI, MIPI DSI, MIPI CSI, 3.5mm jack with mic, 802.11 ac WIFI, Bluetooth 5.0, USB Port, GbE LAN, 40-pin color expansion header, RTC. Also, Radxa ROCK 5A supports USB PD and QC powering.
 

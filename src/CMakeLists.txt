@@ -102,12 +102,12 @@ endif ()
 set (mraa_LIB_ARM_SRCS_NOAUTO
   ${PROJECT_SOURCE_DIR}/src/arm/arm.c
   ${PROJECT_SOURCE_DIR}/src/arm/96boards.c
-  ${PROJECT_SOURCE_DIR}/src/arm/radxa_rock_5a.c
   ${PROJECT_SOURCE_DIR}/src/arm/raspberry_pi.c
   ${PROJECT_SOURCE_DIR}/src/arm/beaglebone.c
   ${PROJECT_SOURCE_DIR}/src/arm/phyboard.c
   ${PROJECT_SOURCE_DIR}/src/arm/banana.c
   ${PROJECT_SOURCE_DIR}/src/arm/de_nano_soc.c
+  ${PROJECT_SOURCE_DIR}/src/arm/radxa_rock_5a.c
   ${PROJECT_SOURCE_DIR}/src/arm/radxa_rock_3c.c
   ${PROJECT_SOURCE_DIR}/src/arm/rockpi4.c
   ${PROJECT_SOURCE_DIR}/src/arm/adlink_ipi.c
