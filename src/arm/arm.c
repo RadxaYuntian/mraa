@@ -22,6 +22,7 @@
 #include "arm/siemens/iot2050.h"
 #include "mraa_internal.h"
 
+
 mraa_platform_t
 mraa_arm_platform()
 {
