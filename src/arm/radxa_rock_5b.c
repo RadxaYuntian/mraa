@@ -145,9 +145,9 @@ mraa_radxa_rock_5b()
     mraa_radxa_rock_5b_pininfo(b, 5,  4, 10, (mraa_pincapabilities_t){1,1,1,0,0,0,0,0}, "GPIO4_B2");  // i2c7 channel is occupied by i2c7-m0 in kernel
     mraa_radxa_rock_5b_pininfo(b, 6, -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,0,0}, "GND");
     mraa_radxa_rock_5b_pininfo(b, 7,  3, 19, (mraa_pincapabilities_t){1,1,1,0,1,1,0,1}, "GPIO3_C3");
-    mraa_radxa_rock_5b_pininfo(b, 8,  4, 13, (mraa_pincapabilities_t){1,0,0,0,0,1,0,1}, "GPIO0_B5");  // used by fiq_debugger
+    mraa_radxa_rock_5b_pininfo(b, 8,  4, 13, (mraa_pincapabilities_t){1,0,0,0,0,1,0,1}, "GPIO0_B5");  // GPIO0_B5 was used by fiq_debugger, function GPIO cannot be enabled
     mraa_radxa_rock_5b_pininfo(b, 9, -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,0,0}, "GND");
-    mraa_radxa_rock_5b_pininfo(b, 10, 0, 14, (mraa_pincapabilities_t){1,0,0,0,0,1,0,1}, "GPIO0_B6");  // used by fiq_debugger
+    mraa_radxa_rock_5b_pininfo(b, 10, 0, 14, (mraa_pincapabilities_t){1,0,0,0,0,1,0,1}, "GPIO0_B6");  // GPIO0_B6 was used by fiq_debugger, function GPIO cannot be enabled
     mraa_radxa_rock_5b_pininfo(b, 11, 3, 17, (mraa_pincapabilities_t){1,1,1,0,1,0,0,1}, "GPIO3_C1");
     mraa_radxa_rock_5b_pininfo(b, 12, 3, 13, (mraa_pincapabilities_t){1,1,1,0,0,0,0,1}, "GPIO3_B5");
     mraa_radxa_rock_5b_pininfo(b, 13, 3, 15, (mraa_pincapabilities_t){1,1,0,0,1,1,0,0}, "GPIO3_B7");

@@ -114,9 +114,6 @@ mraa_arm_platform()
     }
 
     switch (platform_type) {
-        case MRAA_RADXA_ROCK_5B:
-            plat = mraa_radxa_rock_5b();
-            break;
         case MRAA_RASPBERRY_PI:
             plat = mraa_raspberry_pi();
             break;
@@ -137,6 +134,9 @@ mraa_arm_platform()
             break;
         case MRAA_RADXA_ROCK_5A:
             plat = mraa_radxa_rock_5a();
+            break;
+        case MRAA_RADXA_ROCK_5B:
+            plat = mraa_radxa_rock_5b();
             break;
         case MRAA_ROCKPI4:
             plat = mraa_rockpi4();
