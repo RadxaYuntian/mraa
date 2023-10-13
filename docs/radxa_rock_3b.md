@@ -1,4 +1,4 @@
-Radxa ROCK 3 Model C {#_Radxa}
+Radxa ROCK 3 Model B {#_Radxa}
 ====================
 
 Radxa ROCK 3 Model B is a Rockchip RK3568 based SBC(Single Board Computer) by Radxa. It can run Android or Linux. Radxa ROCK 3 Model B features a four core ARM processor, 64bit dual channel 3200Mb/s LPDDR4, HDMI up to 4K60p, MIPI DSI, MIPI CSI, 3.5mm combo audio jack, Wi-Fi 6, Bluetooth 5.0, USB, GbE LAN, and 40-pin color expansion header. Radxa ROCK 3 Model B is powered by the USB Type-C port, and supports 5V input only. The recommended power adapter is 5V/3A without SSD, or 5V/5A with SSD.
