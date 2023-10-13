@@ -8,6 +8,7 @@ Interface notes
 
 - UART2 is enabled as the default console.
 - All UART ports support baud up to 1500000.
+- Pin 3 and Pin 5 were used by audiopwm.
 
 Pin Mapping
 -----------
