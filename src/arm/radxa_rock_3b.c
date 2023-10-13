@@ -123,9 +123,9 @@ mraa_radxa_rock_3b()
     mraa_radxa_rock_3b_pininfo(b, 0, -1, -1, (mraa_pincapabilities_t){0,0,0,0,0,0,0,0}, "INVALID");
     mraa_radxa_rock_3b_pininfo(b, 1, -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,0,0}, "3V3");
     mraa_radxa_rock_3b_pininfo(b, 2, -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,0,0}, "5V");
-    mraa_radxa_rock_3b_pininfo(b, 3, 1, 0, (mraa_pincapabilities_t){1,1,0,0, 0,1,0,1}, "GPIO1_A0"); // GPIO1_A0 was used by audiopwm, function GPIO cannot be enabled
+    mraa_radxa_rock_3b_pininfo(b, 3, 1, 0, (mraa_pincapabilities_t){1,0,0,0, 0,1,0,1}, "GPIO1_A0"); // GPIO1_A0 was used by audiopwm, function GPIO cannot be enabled
     mraa_radxa_rock_3b_pininfo(b, 4, -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,0,0}, "5V");
-    mraa_radxa_rock_3b_pininfo(b, 5, 1, 1, (mraa_pincapabilities_t){1,1,0,0, 0,1,0,1}, "GPIO1_A1"); // GPIO1_A1 was used by audiopwm, function GPIO cannot be enabled
+    mraa_radxa_rock_3b_pininfo(b, 5, 1, 1, (mraa_pincapabilities_t){1,0,0,0, 0,1,0,1}, "GPIO1_A1"); // GPIO1_A1 was used by audiopwm, function GPIO cannot be enabled
     mraa_radxa_rock_3b_pininfo(b, 6, -1, -1, (mraa_pincapabilities_t){1,0,0,0, 0,0,0,0}, "GND");
     mraa_radxa_rock_3b_pininfo(b, 7, 0, 13, (mraa_pincapabilities_t){1,1,1,0, 0,1,0,0}, "GPIO0_B5");
     mraa_radxa_rock_3b_pininfo(b, 8, 0, 25, (mraa_pincapabilities_t){1,0,0,0, 0,0,0,1}, "GPIO0_D1"); // GPIO0_D1 was used by fiq_debugger, function GPIO cannot be enabled
