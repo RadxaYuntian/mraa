@@ -98,6 +98,7 @@ mraa_arm_platform()
         else if (mraa_file_contains("/proc/device-tree/model", "Avnet Ultra96 Rev1"))
             platform_type = MRAA_96BOARDS;
         else if (mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_CM3_IO) ||
+                 mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_CM3_IO_2) ||
                  mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_CM3_RPI_CM4_IO))
             platform_type = MRAA_RADXA_CM3;
         else if (mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_ROCK_3B))

@@ -53,7 +53,7 @@ mraa_radxa_cm3()
     b->no_bus_mux = 1;
     b->phy_pin_count = MRAA_RADXA_CM3_PIN_COUNT + 1;
 
-    if ((b->platform_name = PLATFORM_NAME_RADXA_CM3_IO) || (b->platform_name = PLATFORM_NAME_RADXA_CM3_RPI_CM4_IO))
+    if ((b->platform_name = PLATFORM_NAME_RADXA_CM3_IO) || (b->platform_name = PLATFORM_NAME_RADXA_CM3_IO_2) || (b->platform_name = PLATFORM_NAME_RADXA_CM3_RPI_CM4_IO))
     b->chardev_capable = 1;
 
     // UART
@@ -61,7 +61,6 @@ mraa_radxa_cm3()
     b->def_uart_dev = 0;
     b->uart_dev[0].index = 2;
     b->uart_dev[0].device_path = (char*) radxa_cm3_serialdev[0];
-
 
     // I2C
     b->i2c_bus_count = MRAA_RADXA_CM3_I2C_COUNT;
