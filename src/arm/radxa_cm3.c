@@ -143,7 +143,7 @@ mraa_radxa_cm3()
     mraa_radxa_cm3_pininfo(b, 34, -1, -1, (mraa_pincapabilities_t){1,0,0,0, 0,0,0,0}, "GND");
     mraa_radxa_cm3_pininfo(b, 35, 3, 24, (mraa_pincapabilities_t){1,1,0,0, 0,0,0,0}, "GPIO3_D0");
     mraa_radxa_cm3_pininfo(b, 36, 4, 7, (mraa_pincapabilities_t){1,1,0,0, 1,0,0,0}, "GPIO4_A7");
-    mraa_radxa_cm3_pininfo(b, 37, 0, 16, (mraa_pincapabilities_t){1,1,1,0, 0,0,0,0}, "GPIO0_C2"); 
+    mraa_radxa_cm3_pininfo(b, 37, 0, 18, (mraa_pincapabilities_t){1,1,1,0, 0,0,0,0}, "GPIO0_C2"); 
     mraa_radxa_cm3_pininfo(b, 38, 3, 26, (mraa_pincapabilities_t){1,1,0,0, 0,0,0,0}, "GPIO3_D2");
     mraa_radxa_cm3_pininfo(b, 39, -1, -1, (mraa_pincapabilities_t){1,0,0,0, 0,0,0,0}, "GND");
     mraa_radxa_cm3_pininfo(b, 40, 3, 25, (mraa_pincapabilities_t){1,1,0,0, 0,0,0,0}, "GPIO3_D1");
