@@ -10,7 +10,7 @@
 #include <string.h>
 
 #include "arm/96boards.h"
-#include "arm/radxa_cm3_io.h"
+#include "arm/radxa_cm3.h"
 #include "arm/radxa_rock_3b.h"
 #include "arm/radxa_rock_3c.h"
 #include "arm/radxa_rock_5a.h"
@@ -99,13 +99,11 @@ mraa_arm_platform()
             platform_type = MRAA_96BOARDS;
         else if (mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_CM3_IO) ||
                  mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_CM3_RPI_CM4_IO))
-            platform_type = MRAA_RADXA_CM3_IO;
+            platform_type = MRAA_RADXA_CM3;
         else if (mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_ROCK_3B))
             platform_type = MRAA_RADXA_ROCK_3B;
         else if (mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_ROCK_3C))
             platform_type = MRAA_RADXA_ROCK_3C;
-        else if (mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_CM3_IO))
-            platform_type = MRAA_RADXA_CM3_IO;
         else if (mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_ROCK_5A))
             platform_type = MRAA_RADXA_ROCK_5A;
         else if (mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_ROCK_5B))
@@ -141,8 +139,8 @@ mraa_arm_platform()
         case MRAA_96BOARDS:
             plat = mraa_96boards();
             break;
-        case MRAA_RADXA_CM3_IO:
-            plat = mraa_radxa_cm3_io();
+        case MRAA_RADXA_CM3:
+            plat = mraa_radxa_cm3();
             break;
         case MRAA_RADXA_ROCK_3B:
             plat = mraa_radxa_rock_3b();
