@@ -12,7 +12,7 @@ Interface notes
 Pin Mapping
 -----------
 
-Radxa CM3 IO has a 40-pin expansion header. Each pin is distinguished by the color.
+Radxa CM3 IO/Radxa CM3 RPI CM4 IO has a 40-pin expansion header. Each pin is distinguished by the color.
 
 |    Function3|   Function3|    Function2| Function1|  PIN  |  PIN  |  Function1|    Function2| Function3|
 |-------------|------------|-------------|----------|:------|------:|-----------|-------------|----------|
