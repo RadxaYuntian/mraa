@@ -75,7 +75,7 @@ typedef enum {
     MRAA_RADXA_ROCK_5B = 30,        /**< Radxa ROCK 5 Model B */
     MRAA_ORANGE_PI_PRIME = 31,      /**< Orange Pi Prime board */
     MRAA_RADXA_ROCK_3B = 32,        /**< Radxa ROCK 3 Model B */
-    MRAA_RADXA_CM3 = 33,         /**< Radxa CM3 */
+    MRAA_RADXA_CM3 = 33,            /**< Radxa CM3 */
 
     // USB platform extenders start at 256
     MRAA_FTDI_FT4222 = 256,         /**< FTDI FT4222 USB to i2c bridge */

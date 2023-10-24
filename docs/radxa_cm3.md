@@ -1,7 +1,8 @@
 Radxa CM3 {#_Radxa}
 =========
 
-The Radxa ROCK 3 Compute Module (CM3) is a System on Module (SoM) based on a the Rockchip RK3566 System on Chip (SoC). The CM3 integrates the Central Process Unit (CPU), Power Management Unit (PMU), DRAM memory, flash storage and wireless connectivity (WiFi 5 and BT 5.0) in a small form factor of just 55mm x 40mm. The ROCK CM3 core board uses 3x 100P 0.4mm pitch B2B connector to provide powerful functional support, and can be combined with the customer's backplane to build complete product functions, thereby speeding up the research and development process. At the same time, we provide ROCK CM3 IO Board compatible with ROCK CM3 and RPI CM4 IO Board compatible with ROCK CM3, you can use them to develop the products you want. For example, HMI, robot, video intercom, smart home, etc.
+The Radxa CM3 is a System on Module (SoM) based on the Rockchip RK3566 System on Chip (SoC). CM3 integrates the Central Process Unit (CPU), Power Management Unit (PMU), DRAM memory, flash storage and wireless connectivity (WiFi 5 and BT 5.0) in a small form factor of just 55mm x 40mm. CM3 uses 3x 100P 0.4mm-pitch Board-to-Board connectors to export various features, and can be combined with the customer's baseboard to build complete products, thereby speeding up the research and development process. 
+Currently, CM3 is compatible with Radxa CM3 IO Board and Raspberry Pi CM4 IO Board.
 
 Interface notes
 ---------------
@@ -12,7 +13,7 @@ Interface notes
 Pin Mapping
 -----------
 
-Radxa CM3 IO/Radxa CM3 RPI CM4 IO has a 40-pin expansion header. Each pin is distinguished by the color.
+Radxa CM3 IO Board and Raspberry Pi CM4 IO Baseboard has compatible 40-pin expansion header. Below pinout applies to both products:
 
 |    Function3|   Function3|    Function2| Function1|  PIN  |  PIN  |  Function1|    Function2| Function3|
 |-------------|------------|-------------|----------|:------|------:|-----------|-------------|----------|

@@ -69,7 +69,7 @@ typedef enum {
     RADXA_ROCK_5B = 30,        /**< Radxa ROCK 5 Model B */
     ORANGE_PI_PRIME = 31,      /**< Orange Pi Prime board */
     RADXA_ROCK_3B = 32,        /**< Radxa ROCK 3 Model B */
-    RADXA_CM3 = 33,         /**< Radxa CM3 */
+    RADXA_CM3 = 33,            /**< Radxa CM3 */
 
     FTDI_FT4222 = 256,         /**< FTDI FT4222 USB to i2c bridge */
 

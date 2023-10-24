@@ -13,7 +13,7 @@
 #include "arm/radxa_cm3.h"
 #include "common.h"
 
-const char* radxa_cm3_serialdev[MRAA_RADXA_CM3_UART_COUNT] = { "/dev/ttyS2"};
+const char* radxa_cm3_serialdev[MRAA_RADXA_CM3_UART_COUNT] = { "/dev/ttyS2" };
 
 void
 mraa_radxa_cm3_pininfo(mraa_board_t* board, int index, int gpio_chip, int gpio_line, mraa_pincapabilities_t pincapabilities_t, char* pin_name)
