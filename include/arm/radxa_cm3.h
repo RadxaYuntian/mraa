@@ -21,7 +21,7 @@ extern "C" {
 #define MRAA_RADXA_CM3_AIO_COUNT  1
 #define MRAA_RADXA_CM3_PIN_COUNT  40
 #define PLATFORM_NAME_RADXA_CM3_IO   "Radxa Compute Module 3(CM3) IO Board"
-#define PLATFORM_NAME_RADXA_CM3_IO_2   "Radxa CM3 IO Board"
+#define PLATFORM_NAME_RADXA_CM3_IO__BOARD   "Radxa CM3 IO Board"
 #define PLATFORM_NAME_RADXA_CM3_RPI_CM4_IO   "Radxa CM3 RPI CM4 IO"  // The core board of the Radxa CM3 is compatible with the RPI CM4 IO backplane.
 
 mraa_board_t *
