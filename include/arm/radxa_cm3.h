@@ -1,6 +1,6 @@
 /*
  * Author: Nascs <nascs@radxa.com>
- * Copyright (c) Radxa Limited.
+ * Copyright (c) 2023 Radxa Limited.
  *
  * SPDX-License-Identifier: MIT
  */

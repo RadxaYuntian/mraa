@@ -1,6 +1,6 @@
 /*
  * Author: Nascs <nascs@radxa.com>
- * Copyright (c) Radxa Limited.
+ * Copyright (c) 2023 Radxa Limited.
  *
  * SPDX-License-Identifier: MIT
  */
@@ -25,7 +25,7 @@ mraa_radxa_cm3_pininfo(mraa_board_t* board, int index, int gpio_chip, int gpio_l
     mraa_pininfo_t* pininfo = &board->pins[index];
     strncpy(pininfo->name, pin_name, MRAA_PIN_NAME_SIZE);
 
-    if(pincapabilities_t.gpio == 1) {
+    if (pincapabilities_t.gpio == 1) {
         pininfo->gpio.gpio_chip = gpio_chip;
         pininfo->gpio.gpio_line = gpio_line;
     }
@@ -53,11 +53,10 @@ mraa_radxa_cm3()
     b->no_bus_mux = 1;
     b->phy_pin_count = MRAA_RADXA_CM3_PIN_COUNT + 1;
 
-    if(mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_CM3_IO) ||
-       mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_CM3_IO__BOARD)
-       ) {
+    if (mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_CM3_IO) ||
+       mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_CM3_IO__BOARD)) {
         b->platform_name = PLATFORM_NAME_RADXA_CM3_IO;
-    } else if(mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_CM3_RPI_CM4_IO)) {
+    } else if (mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_CM3_RPI_CM4_IO)) {
         b->platform_name = PLATFORM_NAME_RADXA_CM3_RPI_CM4_IO;
     } else {
         printf("An unknown product detected. Fail early...\n");

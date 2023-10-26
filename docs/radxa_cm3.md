@@ -13,7 +13,7 @@ Interface notes
 Pin Mapping
 -----------
 
-Radxa CM3 IO Board and Raspberry Pi CM4 IO Baseboard has compatible 40-pin expansion header. Below pinout applies to both products:
+Radxa CM3 IO Board and Raspberry Pi CM4 IO Baseboard's 40-pin expansion header are compatible. The following pinout applies to both products:
 
 |    Function3|   Function3|    Function2| Function1|  PIN  |  PIN  |  Function1|    Function2| Function3|
 |-------------|------------|-------------|----------|:------|------:|-----------|-------------|----------|
