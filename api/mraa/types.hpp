@@ -70,7 +70,7 @@ typedef enum {
     ORANGE_PI_PRIME = 31,      /**< Orange Pi Prime board */
     RADXA_ROCK_3B = 32,        /**< Radxa ROCK 3 Model B */
     RADXA_CM3 = 33,            /**< Radxa CM3 */
-    RADXA_CM5_IO = 34,          /**< Radxa CM5 IO */
+    RADXA_CM5_IO = 34,         /**< Radxa CM5 IO */
 
     FTDI_FT4222 = 256,         /**< FTDI FT4222 USB to i2c bridge */
 
