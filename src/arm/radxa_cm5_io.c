@@ -120,7 +120,6 @@ mraa_radxa_cm5_io()
     b->aio_non_seq = 1;
     b->chardev_capable = 1;
 
-    // Hardware X2.0
     mraa_radxa_cm5_io_pininfo(b, 0, -1, -1, (mraa_pincapabilities_t){0,0,0,0,0,0,0,0}, "INVALID");
     mraa_radxa_cm5_io_pininfo(b, 1, -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,0,0}, "3V3");
     mraa_radxa_cm5_io_pininfo(b, 2, -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,0,0}, "5V");
