@@ -1,14 +1,13 @@
 Radxa CM5 IO {#_Radxa}
 ============
 
-Radxa CM5 IO is a Rockchip RK3588s based SBC(Single Board Computer) by Radxa. It can run android or some Linux distributions. Radxa CM5 IO features an eight core ARM processor, 64bit dual channel 3200Mb/s LPDDR4, up to 8Kp60 HDMI, MIPI DSI, MIPI CSI, 3.5mm jack with mic, 802.11 ac WIFI, Bluetooth 5.0, USB Port, GbE LAN, 40-pin color expansion header, RTC. Also, Radxa CM5 IO supports USB PD and QC powering.
+The Radxa CM5 is a System on Module (SoM) based on the Rockchip RK3588s System on Chip (SoC). CM5 is compatible with Radxa CM5 IO Board. It can run android or some Linux distributions. Radxa CM5 IO features an eight core ARM processor, 64bit dual channel 3200Mb/s LPDDR4, up to 8Kp60 HDMI, MIPI DSI, MIPI CSI, 3.5mm jack with mic, 802.11 ac WIFI, Bluetooth 5.0, USB Port, GbE LAN, 40-pin color expansion header, RTC. Also, Radxa CM5 IO supports USB PD and QC powering.
 
 Interface notes
 ---------------
 
 - UART2 is enabled as the default console.
 - All UART ports support baud up to 1500000.
-- CS0 is occupied by rk806, spi2 on 40 pins can't be used.
 
 Pin Mapping
 -----------

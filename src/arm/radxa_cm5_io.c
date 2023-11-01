@@ -127,15 +127,15 @@ mraa_radxa_cm5_io()
     mraa_radxa_cm5_io_pininfo(b, 4, -1, -1, (mraa_pincapabilities_t){1,0,0,0, 0,0,0,0}, "5V");
     mraa_radxa_cm5_io_pininfo(b, 5, 3, 26, (mraa_pincapabilities_t){1,1,0,0,1,1,0,0}, "GPIO3_D2");
     mraa_radxa_cm5_io_pininfo(b, 6, -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,0,0}, "GND");
-    mraa_radxa_cm5_io_pininfo(b, 7, 4, 7, (mraa_pincapabilities_t){1,1,0,0,0,1,0,0}, "GPIO4_A7");  // cs0 is occupied by rk806, function spi can't be used
+    mraa_radxa_cm5_io_pininfo(b, 7, 4, 7, (mraa_pincapabilities_t){1,1,0,0,0,1,0,0}, "GPIO4_A7");
     mraa_radxa_cm5_io_pininfo(b, 8, 4, 13, (mraa_pincapabilities_t){1,0,0,0,0,1,0,1}, "GPIO0_B5");  // IO resources is occupied by uart, function GPIO can't be used.
     mraa_radxa_cm5_io_pininfo(b, 9, -1, -1, (mraa_pincapabilities_t){1,0,0,0, 0,0,0,0}, "GND");
     mraa_radxa_cm5_io_pininfo(b, 10, 0, 14, (mraa_pincapabilities_t){1,0,0,0,0,1,0,1}, "GPIO0_B6");  // IO resources is occupied by uart, function GPIO can't be used.
-    mraa_radxa_cm5_io_pininfo(b, 11, 4, 6, (mraa_pincapabilities_t){1,1,0,0,0,1,0,1}, "GPIO4_A6");  // cs0 is occupied by rk806, function spi can't be used
+    mraa_radxa_cm5_io_pininfo(b, 11, 4, 6, (mraa_pincapabilities_t){1,1,0,0,0,1,0,1}, "GPIO4_A6");
     mraa_radxa_cm5_io_pininfo(b, 12, 0, 18, (mraa_pincapabilities_t){1,1,0,0,0,0,0,0}, "GPIO0_C2");
-    mraa_radxa_cm5_io_pininfo(b, 13, 4, 5, (mraa_pincapabilities_t){1,1,0,0,0,1,0,1}, "GPIO4_A5");  // cs0 is occupied by rk806, function spi can't be used
+    mraa_radxa_cm5_io_pininfo(b, 13, 4, 5, (mraa_pincapabilities_t){1,1,0,0,0,1,0,1}, "GPIO4_A5");
     mraa_radxa_cm5_io_pininfo(b, 14, -1, -1, (mraa_pincapabilities_t){1,0,0,0, 0,0,0,0}, "GND");
-    mraa_radxa_cm5_io_pininfo(b, 15, 4, 4, (mraa_pincapabilities_t){1,1,0,0,0,1,0,0}, "GPIO4_A4");  // cs0 is occupied by rk806, function spi can't be used
+    mraa_radxa_cm5_io_pininfo(b, 15, 4, 4, (mraa_pincapabilities_t){1,1,0,0,0,1,0,0}, "GPIO4_A4");
     mraa_radxa_cm5_io_pininfo(b, 16, 1, 20, (mraa_pincapabilities_t){1,1,1,0,1,1,0,0}, "GPIO1_C4");
     mraa_radxa_cm5_io_pininfo(b, 17, -1, -1, (mraa_pincapabilities_t){1,0,0,0, 0,0,0,0}, "3V3");
     mraa_radxa_cm5_io_pininfo(b, 18, 1, 29, (mraa_pincapabilities_t){1,1,0,0,1,0,0,0}, "GPIO1_D5");
