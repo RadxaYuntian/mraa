@@ -147,8 +147,8 @@ mraa_radxa_cm5_io()
     mraa_radxa_cm5_io_pininfo(b, 24, 4, 10, (mraa_pincapabilities_t){1,1,1,0,1,1,0,0}, "GPIO4_B2");
     mraa_radxa_cm5_io_pininfo(b, 25, -1, -1, (mraa_pincapabilities_t){1,0,0,0, 0,0,0,0}, "GND");
     mraa_radxa_cm5_io_pininfo(b, 26, 3, 15, (mraa_pincapabilities_t){1,1,0,0,1,1,0,0}, "GPIO3_B7");
-    mraa_radxa_cm5_io_pininfo(b, 27, -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,0,0}, "USB");
-    mraa_radxa_cm5_io_pininfo(b, 28, -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,0,0}, "USB");
+    mraa_radxa_cm5_io_pininfo(b, 27, -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,0,0}, "3V3");
+    mraa_radxa_cm5_io_pininfo(b, 28, -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,0,0}, "3V3");
     mraa_radxa_cm5_io_pininfo(b, 29, 0, 24, (mraa_pincapabilities_t){1,1,1,0,1,1,0,0}, "GPIO0_D0");
     mraa_radxa_cm5_io_pininfo(b, 30, -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,0,0}, "GND");
     mraa_radxa_cm5_io_pininfo(b, 31, 0, 23, (mraa_pincapabilities_t){1,1,1,0,1,1,0,0}, "GPIO0_C7");
