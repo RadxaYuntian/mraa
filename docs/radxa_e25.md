@@ -34,6 +34,6 @@ Supports
 
 You can find additional product support in the following channels:
 
-- [Product Info](https://docs.radxa.com/en/compute-module/e25)
+- [Product Info](https://docs.radxa.com/en/rock3/e25)
 - [Forums](https://forum.radxa.com/c/rock3)
 - [Github](https://github.com/radxa)

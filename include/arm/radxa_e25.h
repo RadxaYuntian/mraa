@@ -19,7 +19,7 @@ extern "C" {
 #define MRAA_RADXA_E25_UART_COUNT 3
 #define MRAA_RADXA_E25_PWM_COUNT  6
 #define MRAA_RADXA_E25_AIO_COUNT  1
-#define MRAA_RADXA_E25_PIN_COUNT  40
+#define MRAA_RADXA_E25_PIN_COUNT  26
 #define PLATFORM_NAME_RADXA_E25   "Radxa E25 Carrier Board"
 
 mraa_board_t *
