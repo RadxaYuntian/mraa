@@ -72,7 +72,7 @@ typedef enum {
     RADXA_CM3 = 33,            /**< Radxa CM3 */
     RADXA_CM5_IO = 34,         /**< Radxa CM5 IO */
     RADXA_ROCK_3A = 35,        /**< Radxa ROCK 3 Model A */
-    RADXA_E25 = 37,            /**< Radxa E25 */
+    RADXA_E25 = 36,            /**< Radxa E25 */
 
     FTDI_FT4222 = 256,         /**< FTDI FT4222 USB to i2c bridge */
 
