@@ -7,7 +7,7 @@ Interface notes
 ---------------
 
 - All UART ports support baud up to 1500000.
-- Radxa E25 V1.3 is not supported, only versions 1.4 and later are supported.
+- Radxa E25 v1.3 or earlier with 10-pin header are **NOT** supported. Only v1.4 or later with 26-pin header are supported.
 
 Pin Mapping
 -----------
