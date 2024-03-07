@@ -42,6 +42,6 @@ Supports
 
 You can find additional product support in the following channels:
 
-- [Product Info](https://docs.radxa.com/rockpi/e)
+- [Product Info](https://docs.radxa.com/rockpi/rockpie)
 - [Forums](https://forum.radxa.com/c/rockpie)
 - [Github](https://github.com/radxa)
