@@ -21,9 +21,9 @@ struct gpiochip_info {
 #define GPIOLINE_FLAG_ACTIVE_LOW        (1UL << 2)
 #define GPIOLINE_FLAG_OPEN_DRAIN        (1UL << 3)
 #define GPIOLINE_FLAG_OPEN_SOURCE       (1UL << 4)
-#define GPIOLINE_FLAG_BIAS_PULL_UP       (1UL << 5)
-#define GPIOLINE_FLAG_BIAS_PULL_DOWN       (1UL << 6)
-#define GPIOLINE_FLAG_BIAS_DISABLE       (1UL << 7)
+#define GPIOLINE_FLAG_BIAS_PULL_UP      (1UL << 5)
+#define GPIOLINE_FLAG_BIAS_PULL_DOWN    (1UL << 6)
+#define GPIOLINE_FLAG_BIAS_DISABLE      (1UL << 7)
 
 struct gpioline_info {
     __u32 line_offset;
