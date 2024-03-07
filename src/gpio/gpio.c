@@ -1162,9 +1162,6 @@ mraa_gpio_mode(mraa_gpio_context dev, mraa_gpio_mode_t mode)
             case MRAA_GPIO_PULLDOWN:
                 length = snprintf(bu, sizeof(bu), "pulldown");
                 break;
-            case MRAA_GPIO_DISABLE:
-                length = snprintf(bu, sizeof(bu), "disable");
-                break;
             case MRAA_GPIO_HIZ:
                 length = snprintf(bu, sizeof(bu), "hiz");
                 break;

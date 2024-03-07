@@ -442,7 +442,7 @@ mraa_is_gpio_line_bias_pull_down(mraa_gpiod_line_info* linfo)
 }
 
 mraa_boolean_t
-mraa_is_gpio_line_disable(mraa_gpiod_line_info* linfo)
+mraa_is_gpio_line_bias_disable(mraa_gpiod_line_info* linfo)
 {
     return (linfo->flags & GPIOLINE_FLAG_BIAS_DISABLE);
 }
