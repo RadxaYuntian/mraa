@@ -55,7 +55,7 @@ mraa_radxa_rock_3c()
         b->platform_name = PLATFORM_NAME_RADXA_ZERO3;
     } else {
         printf("An unknown product detected. Fail early...\n");
-        exit(-1);
+        return NULL;
     }
 
     // pin mux for buses are setup by default by kernel so tell mraa to ignore them
