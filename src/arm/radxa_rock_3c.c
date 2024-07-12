@@ -54,7 +54,7 @@ mraa_radxa_rock_3c()
     } else if (mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_ZERO3)) {
         b->platform_name = PLATFORM_NAME_RADXA_ZERO3;
     } else {
-        printf("An unknown product detected. Fail early...\n");
+        syslog(LOG_ERR, "An unknown product detected. Fail early...");
         return NULL;
     }
 
