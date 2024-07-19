@@ -56,8 +56,8 @@ mraa_radxa_e25()
     if (mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_E25)) {
         b->platform_name = PLATFORM_NAME_RADXA_E25;
     } else {
-        syslog(LOG_ERR, "An unknown product detected. Fail early...");
-        return NULL;
+        printf("An unknown product detected. Fail early...\n");
+        exit(-1);
     }
 
     b->chardev_capable = 1;
