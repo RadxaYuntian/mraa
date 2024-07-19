@@ -61,6 +61,7 @@ mraa_radxa_rock_3c()
     // pin mux for buses are setup by default by kernel so tell mraa to ignore them
     b->no_bus_mux = 1;
     b->phy_pin_count = MRAA_RADXA_ROCK_3C_PIN_COUNT + 1;
+    b->chardev_capable = 1;
 
     // UART
     b->uart_dev_count = MRAA_RADXA_ROCK_3C_UART_COUNT;
