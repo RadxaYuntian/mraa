@@ -59,8 +59,8 @@ mraa_radxa_cm3()
     } else if (mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_CM3_RPI_CM4_IO)) {
         b->platform_name = PLATFORM_NAME_RADXA_CM3_RPI_CM4_IO;
     } else {
-        syslog(LOG_ERR, "An unknown product detected. Fail early...");
-        return NULL;
+        printf("An unknown product detected. Fail early...\n");
+        exit(-1);
     }
 
     b->chardev_capable = 1;
