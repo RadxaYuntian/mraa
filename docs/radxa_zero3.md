@@ -1,4 +1,4 @@
-Radxa ZERO3 {#_Radxa}
+Radxa ZERO 3 {#_Radxa}
 =====================
 
 Radxa ZERO 3 is an ultra-small, versatile platform that can be used for a wide variety of applications, including IoT devices, machine learning edge computing, home automation, education, and entertainment.
