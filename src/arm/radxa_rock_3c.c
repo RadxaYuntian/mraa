@@ -55,6 +55,7 @@ mraa_radxa_rock_3c()
         b->platform_name = PLATFORM_NAME_RADXA_ZERO3;
     } else {
         syslog(LOG_ERR, "An unknown product detected. Fail early...");
+        free(b);
         return NULL;
     }
 
