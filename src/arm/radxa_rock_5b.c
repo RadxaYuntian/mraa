@@ -48,9 +48,17 @@ mraa_radxa_rock_5b()
     b->no_bus_mux = 1;
     b->phy_pin_count = MRAA_RADXA_ROCK_5B_PIN_COUNT + 1;
 
+    if (mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_ROCK_5B)) {
+        b->platform_name = PLATFORM_NAME_RADXA_ROCK_5B;
+    } else if (mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_ROCK_5B_PLUS)) {
+        b->platform_name = PLATFORM_NAME_RADXA_ROCK_5B_PLUS;
+    } else {
+        syslog(LOG_ERR, "An unknown product detected. Fail early...");
+        return NULL;
+    }
+
     // UART
     b->uart_dev_count = MRAA_RADXA_ROCK_5B_UART_COUNT;
-    b->platform_name = PLATFORM_NAME_RADXA_ROCK_5B;
     b->def_uart_dev = 0;
     b->uart_dev[0].index = 2;
     b->uart_dev[1].index = 3;
@@ -60,7 +68,7 @@ mraa_radxa_rock_5b()
     b->uart_dev[1].device_path = (char*) radxa_rock_5b_serialdev[1];
     b->uart_dev[2].device_path = (char*) radxa_rock_5b_serialdev[2];
     b->uart_dev[3].device_path = (char*) radxa_rock_5b_serialdev[3];
-    
+
     // I2C
     b->i2c_bus_count = MRAA_RADXA_ROCK_5B_I2C_COUNT;
     b->def_i2c_bus = 0;
@@ -108,12 +116,6 @@ mraa_radxa_rock_5b()
     b->pins[28].pwm.parent_id = 6;   // PWM6_M2
     b->pins[28].pwm.mux_total = 0;
     b->pins[28].pwm.pinmap = 0;
-    b->pins[29].pwm.parent_id = 15;   // PWM15_M3
-    b->pins[29].pwm.mux_total = 0;
-    b->pins[29].pwm.pinmap = 0;
-    b->pins[31].pwm.parent_id = 13;   // PWM13_M2
-    b->pins[31].pwm.mux_total = 0;
-    b->pins[31].pwm.pinmap = 0;
     b->pins[32].pwm.parent_id = 14;   // PWM14_M0
     b->pins[32].pwm.mux_total = 0;
     b->pins[32].pwm.pinmap = 0;
@@ -129,6 +131,22 @@ mraa_radxa_rock_5b()
     b->pins[38].pwm.parent_id = 3;   // PWM3_M1
     b->pins[38].pwm.mux_total = 0;
     b->pins[38].pwm.pinmap = 0;
+
+    if (mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_ROCK_5B)) {
+        b->pins[29].pwm.parent_id = 15;   // PWM15_M3
+        b->pins[29].pwm.mux_total = 0;
+        b->pins[29].pwm.pinmap = 0;
+        b->pins[31].pwm.parent_id = 13;   // PWM13_M2
+        b->pins[31].pwm.mux_total = 0;
+        b->pins[31].pwm.pinmap = 0;
+    } else if (mraa_file_contains("/proc/device-tree/model", PLATFORM_NAME_RADXA_ROCK_5B_PLUS)) {
+        b->pins[29].pwm.parent_id = 1;   // PWM1_M2
+        b->pins[29].pwm.mux_total = 0;
+        b->pins[29].pwm.pinmap = 0;
+        b->pins[31].pwm.parent_id = 0;   // PWM0_M2
+        b->pins[31].pwm.mux_total = 0;
+        b->pins[31].pwm.pinmap = 0;
+    }
 
     b->aio_count = MRAA_RADXA_ROCK_5B_AIO_COUNT;
     b->adc_raw = 10;
@@ -152,7 +170,7 @@ mraa_radxa_rock_5b()
     mraa_radxa_rock_5b_pininfo(b, 12, 3, 13, (mraa_pincapabilities_t){1,1,1,0,0,0,0,1}, "GPIO3_B5");
     mraa_radxa_rock_5b_pininfo(b, 13, 3, 15, (mraa_pincapabilities_t){1,1,0,0,1,1,0,0}, "GPIO3_B7");
     mraa_radxa_rock_5b_pininfo(b, 14, -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,0,0}, "GND");
-    mraa_radxa_rock_5b_pininfo(b, 15, 3, 16, (mraa_pincapabilities_t){1,0,0,0,1,1,0,1}, "GPIO3_C0");
+    mraa_radxa_rock_5b_pininfo(b, 15, 3, 16, (mraa_pincapabilities_t){1,1,0,0,1,1,0,1}, "GPIO3_C0");
     mraa_radxa_rock_5b_pininfo(b, 16, 3, 4, (mraa_pincapabilities_t){1,1,0,0,1,0,0,0}, "GPIO3_A4");
     mraa_radxa_rock_5b_pininfo(b, 17, -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,0,0}, "3V3");
     mraa_radxa_rock_5b_pininfo(b, 18, 4, 20, (mraa_pincapabilities_t){1,1,1,0,1,0,0,0}, "GPIO4_C4");
@@ -166,18 +184,25 @@ mraa_radxa_rock_5b()
     mraa_radxa_rock_5b_pininfo(b, 26, 1, 13, (mraa_pincapabilities_t){1,1,0,0,1,0,0,1}, "GPIO1_B5");
     mraa_radxa_rock_5b_pininfo(b, 27, 4, 22, (mraa_pincapabilities_t){1,1,1,0,1,1,0,0}, "GPIO4_C6");
     mraa_radxa_rock_5b_pininfo(b, 28, 4, 21, (mraa_pincapabilities_t){1,1,1,0,1,1,0,0}, "GPIO4_C5");
-    mraa_radxa_rock_5b_pininfo(b, 29, 1, 31, (mraa_pincapabilities_t){1,1,1,0,0,0,0,0}, "GPIO1_D7");
     mraa_radxa_rock_5b_pininfo(b, 30, -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,0,0}, "GND");
-    mraa_radxa_rock_5b_pininfo(b, 31, 1, 15, (mraa_pincapabilities_t){1,1,1,0,0,0,0,0}, "GPIO1_B7");
     mraa_radxa_rock_5b_pininfo(b, 32, 3, 18, (mraa_pincapabilities_t){1,1,1,0,1,1,0,1}, "GPIO3_C2");
     mraa_radxa_rock_5b_pininfo(b, 33, 3, 7, (mraa_pincapabilities_t){1,1,1,0,0,0,0,0}, "GPIO3_A7");
     mraa_radxa_rock_5b_pininfo(b, 34, -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,0,0}, "GND");
     mraa_radxa_rock_5b_pininfo(b, 35, 3, 14, (mraa_pincapabilities_t){1,1,1,0,0,0,0,1}, "GPIO3_B6");
-    mraa_radxa_rock_5b_pininfo(b, 36, 3, 9, (mraa_pincapabilities_t){1,1,1,0,0,0,0,1}, "GPIO3_B1");
-    mraa_radxa_rock_5b_pininfo(b, 37, -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,1,0}, "NC");
+    mraa_radxa_rock_5b_pininfo(b, 36, 3, 9, (mraa_pincapabilities_t){1,1,1,0,0,0,0,1}, "GPIO3_B1"); 
     mraa_radxa_rock_5b_pininfo(b, 38, 3, 10, (mraa_pincapabilities_t){1,1,1,0,0,0,0,1}, "GPIO3_B2");
     mraa_radxa_rock_5b_pininfo(b, 39, -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,0,0}, "GND");
     mraa_radxa_rock_5b_pininfo(b, 40, 3, 11, (mraa_pincapabilities_t){1,1,0,0,0,0,0,0}, "GPIO3_B3");
+
+    if(b->platform_name == PLATFORM_NAME_RADXA_ROCK_5B) {
+        mraa_radxa_rock_5b_pininfo(b, 29, 1, 31, (mraa_pincapabilities_t){1,1,1,0,0,0,0,0}, "GPIO1_D7");
+        mraa_radxa_rock_5b_pininfo(b, 31, 1, 15, (mraa_pincapabilities_t){1,1,1,0,0,0,0,0}, "GPIO1_B7");
+        mraa_radxa_rock_5b_pininfo(b, 37, -1, -1, (mraa_pincapabilities_t){1,0,0,0,0,0,1,0}, "NC");
+    } else if(b->platform_name == PLATFORM_NAME_RADXA_ROCK_5B_PLUS) {
+        mraa_radxa_rock_5b_pininfo(b, 29, 1, 3, (mraa_pincapabilities_t){1,1,1,0,0,1,0,0}, "GPIO1_A3");
+        mraa_radxa_rock_5b_pininfo(b, 31, 1, 2, (mraa_pincapabilities_t){1,1,1,0,0,1,0,0}, "GPIO1_A2");
+        mraa_radxa_rock_5b_pininfo(b, 37, 0, 0, (mraa_pincapabilities_t){1,1,0,0,0,0,1,0}, "GPIO0_A0");
+    }
 
     return b;
 }
